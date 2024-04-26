@@ -11,19 +11,19 @@ const tabData = {
     },
     Quiz: {
       text:
-        "Manage your team’s proofing process all in one place, streamline feedback and approvals. Quickly identify bottlenecks in the workflow and address them directly in the platform. Ensure that all team members have access to the latest versions."
+        "Quiz."
     },
     Test: {
       text:
-        "Capture important project notes in one accessible location. Make sure that your notes are organized and easy to find when you need them. Use tags and categories to keep everything in order so that your team can stay aligned."
+        "Test."
     },
     Game: {
       text:
-        "Broadcast updates and news to your entire team. Keep everyone informed about the latest developments and ensure that all stakeholders are aware of changes. Use announcements to celebrate milestones and recognize individual contributions."
+        "Game."
     },
     Others: {
       text:
-        "Communicate in real-time with your team members. Use chat to quickly solve problems, share updates, and make decisions without delay. The chat feature allows for immediate feedback and helps keep the team connected."
+        "Others."
     },
   };
   
@@ -66,10 +66,38 @@ const RelationFunc = () => {
               ))}
             </nav>
           </header>
-          <div className="flex  justify-center  items-center ">
-             <div className=' w-[712px] h-[400px] bg-gradient-to-r from-blue-900 to-blue-800 rounded-3xl flex justify-center items-center  '>
+          <div className=" relative  flex  justify-center  items-center ">
+
+            {/* flash card  */}
+             <div className=' w-[712px] h-[400px] bg-gradient-to-tr from-blue-400 to-blue-900 rounded-3xl flex justify-center items-center  '>
              <p className='text-white font-bold text-4xl'>{text} </p>
+
+              <div className=' absolute top-10  flex justify-between  gap-[550px]  '> 
+                  <img src="light.png" alt="" />
+                  <img src="sound.png" alt="" />
+              </div>
              </div>
+
+          </div>
+             {/* flash card end   */}
+
+          <div className='flex items-center justify-center mt-10 gap-16'>
+              <img className=' w-14 h-14 ' src="reload.png" alt="" />
+              <img className='w-14 h-14' src="Left.png" alt="" />
+              <span className='text-2              backdrop:xl font-bold '>01/10</span>
+              <img className='w-14 h-14' src="Right.png" alt="" />
+              <img className='w-14 h-14' src="square.png" alt="" />
+
+          </div>
+
+          <div className='flex justify-between items-center mt-20 '>
+            <div>
+              <img src="Footerlogo.png" alt="" />             
+            </div>
+            <div className='flex gap-5 items-center '>
+              <img src="plus.png" alt="" />
+              <span className='text-2xl text-[#06286E] font-bold '>Create Flashcard</span>
+            </div>
           </div>
         </div>
     </div>

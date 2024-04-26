@@ -1,3 +1,4 @@
+import Faq from './components/Faq';
 import Navbar from './components/Navbar';
 import RelationFunc from './components/RelationFunc';
 
@@ -8,6 +9,7 @@ function App() {
     <div className='max-w-screen-2xl mx-auto'>
       <Navbar />
       <RelationFunc />
+      <Faq/>
     </div>
   );
 }
